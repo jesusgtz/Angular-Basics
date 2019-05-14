@@ -6,16 +6,25 @@ import { Component } from '@angular/core';
 })
 
 export class VideojuegosComponent{
-	nombre = 'Videojuegos';
-	mejor_juego = 'FIFA';
-	mejor_juego_retro = 'SuperMario 64';
-	mostrar_retro = true;
+	nombre:string;
+	mejor_juego:string;
+	mejor_juego_retro:string;
+	mostrar_retro:boolean;
+	//year:number = 2019
 
-	videojuegos = [
-		'Los Simpson',
-		'Halo',
-		'GTA',
-		'Call of Duty',
-		'Galaga'
-	];
+	videojuegos:Array<String>;
+
+	constructor() {
+		this.nombre = 'Videojuegos';
+		this.mejor_juego = 'FIFA';
+		this.mejor_juego_retro = 'SuperMario 64';
+		this.mostrar_retro = true;
+		this.videojuegos  = [
+			'Los Simpson',
+			'Halo',
+			'GTA',
+			'Call of Duty',
+			'Galaga'
+		];
+	}
 }
