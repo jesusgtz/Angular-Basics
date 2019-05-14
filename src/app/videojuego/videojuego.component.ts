@@ -2,16 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'videojuegos',
-	template: `
-	<h2>Componente videojuego</h2>
-	<h3 *ngIf="mostrar_retro != true">El mejor juego es: {{ mejor_juego }}</h3>
-	<h3 [style.background]="'red'" *ngIf="mostrar_retro">El mejor juego es: {{ mejor_juego_retro }}</h3>
-
-	<h2>Listado de videojuegos</h2>
-	<ul>
-		<li *ngFor="let game of videojuegos">{{game}}</li>
-	</ul>
-	`
+	templateUrl: './videojuego.component.html'
 })
 
 export class VideojuegosComponent{
